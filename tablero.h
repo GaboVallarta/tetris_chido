@@ -29,6 +29,9 @@ void mostrar(vector<vector<int>>&matriz){
             if(matriz[i][j]==0){
                 cout<<"[ ]";
             }
+            if(matriz[i][j]==1){
+                cout<<"[0]";
+            }
             if(matriz[i][j]==4){
                 cout<<"!!!";
             }
