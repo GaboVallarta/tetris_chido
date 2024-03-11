@@ -14,7 +14,7 @@ vector <vector<int>> matriz;
 
 Base* figura1=new Cuadrado;
 
-int x=4,y=10;
+int x=0,y=0;
 
 
 int main(){

@@ -20,14 +20,14 @@ class Base{
     }
 
     virtual void spawn(vector<vector<int>>&matriz,int & x, int & y){
-        if(x==0&&y==0){
-            for(int i=0;i<3;i++){
-                 for(int j=0;j<3;j++){
-                     matriz[1+i+y][4+j+x]=this->espacioBase[i][j];
-                }
         
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                matriz[1+i+y][4+j+x]=this->espacioBase[i][j];
             }
+        
         }
+        
          
 
         
@@ -38,7 +38,7 @@ class Base{
         espacioBase[0][2]=1;
     }
     virtual bool mover(vector<vector<int>>&matriz){
-        
+        return true;
     }
 
 };
@@ -115,7 +115,7 @@ class Linea: public Base{
     }
 
 
-    void spawn(vector<vector<int>>&matriz,int x, int y){
+    void spawn(vector<vector<int>>&matriz,int & x, int & y){
          for(int i=0;i<4;i++){
              for(int j=0;j<4;j++){
                  matriz[1+i+y+x][4+j]=this->espacioBase[i][j];
@@ -151,7 +151,7 @@ class Cuadrado: public Base{
     }
 
 
-    void spawn(vector<vector<int>>&matriz,int x, int y){
+    void spawn(vector<vector<int>>&matriz,int & x, int & y){
          
          for(int i=0;i<2;i++){
              for(int j=0;j<2;j++){
