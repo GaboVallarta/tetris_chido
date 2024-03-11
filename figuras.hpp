@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "rlutil.h"
 using namespace std;
 
 class Base{
@@ -18,13 +19,16 @@ class Base{
         }
     }
 
-    virtual void spawn(vector<vector<int>>&matriz,int x, int y){
-         for(int i=0;i<3;i++){
-             for(int j=0;j<3;j++){
-                 matriz[1+i+y][4+j+x]=this->espacioBase[i][j];
-         }
+    virtual void spawn(vector<vector<int>>&matriz,int & x, int & y){
+        if(x==0&&y==0){
+            for(int i=0;i<3;i++){
+                 for(int j=0;j<3;j++){
+                     matriz[1+i+y][4+j+x]=this->espacioBase[i][j];
+                }
         
+            }
         }
+         
 
         
     }

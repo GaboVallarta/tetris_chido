@@ -1,8 +1,10 @@
 #include <iostream>
 #include <vector>
 #include "tablero.h"
+#include "rlutil.h"
 #include "figuras.hpp"
 using namespace std;
+using namespace rlutil;
 
 /// hay que ponerle lo de que cuando sean 1 que se vean en el tablero
 
@@ -21,6 +23,7 @@ int main(){
     figura1->forma();
     figura1->spawn(matriz,x,y);
     mostrar(matriz);
+    
 
     return 0;
 };
