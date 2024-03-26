@@ -1,1 +1,8 @@
 *.exe
+*.sqlite
+*.ipch
+*-wal
+*.db
+*db-shm
+*.opendb
+*.vsidx

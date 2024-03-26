@@ -18,11 +18,18 @@ int x=0,y=0;
 
 
 int main(){
+
     crear(matriz);
-    figura1->establecer();
-    figura1->forma();
-    figura1->spawn(matriz,x,y);
-    mostrar(matriz);
+    while(true){
+        cls();
+        figura1->establecer();
+        figura1->forma();
+        figura1->spawn(matriz,x,y);
+        mostrar(matriz);
+        msleep(1000);
+        
+    }
+    
     
 
     return 0;

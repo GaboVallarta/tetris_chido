@@ -19,6 +19,10 @@ class Base{
         }
     }
 
+    bool revisar(vector<vector<int>>&matriz){
+
+    }
+
     virtual void spawn(vector<vector<int>>&matriz,int & x, int & y){
         
         for(int i=0;i<3;i++){
