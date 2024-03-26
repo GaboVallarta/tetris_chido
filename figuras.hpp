@@ -20,7 +20,12 @@ class Base{
     }
 
     bool revisar(vector<vector<int>>&matriz){
-
+        
+        if(matriz[3+y][4+x]==0&&matriz[3+y][5+x]==0&&matriz[3+y][6+x]==0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     virtual void spawn(vector<vector<int>>&matriz,int & x, int & y){
